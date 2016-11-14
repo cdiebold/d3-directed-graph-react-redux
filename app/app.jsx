@@ -9,17 +9,18 @@ import { connect } from 'react-redux';
 import AppContainer from './containers/AppContainer';
 // import { resizeScreen } from './actions';
 
-let store = createStore(particlesApp);
+//let store = createStore(particlesApp);
 
 ReactDOM.render(
-    <Provider store={store}>
-        <AppContainer />
-    </Provider>,
+    // <Provider store={store}>
+    //     <AppContainer />
+    // </Provider>,
+    <AppContainer/>,
     document.getElementById('app')
 );
 
 let onResize = function () {
-    store.dispatch(resizeScreen(window.innerWidth, window.innerHeight));
+  //  store.dispatch(resizeScreen(window.innerWidth, window.innerHeight));
 }
 onResize();
 

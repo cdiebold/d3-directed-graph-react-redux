@@ -5,23 +5,23 @@ import Main from '../components/Main';
 
 class AppContainer extends React.Component{
 
-  componentDidMount(){
-    const {store} = this.context;
-    this.unsubscribe = store.subscribe(() =>
-      this.forceUpdate()
-    );
-  }
-  componentWillUnmount(){
-    this.unsubscribe();
-  }
+  // componentDidMount(){
+  //   const {store} = this.context;
+  //   this.unsubscribe = store.subscribe(() =>
+  //     this.forceUpdate()
+  //   );
+  // }
+  // componentWillUnmount(){
+  //   this.unsubscribe();
+  // }
 
   render(){
-    const {store} = this.context;
-    const state = store.getState();
+    //const {store} = this.context;
+  //  const state = store.getState();
     return (
-      <Main {...state}
-
-        />
+      <div>
+        <h2> hello </h2>
+      </div>
     );
 
 
@@ -31,7 +31,7 @@ class AppContainer extends React.Component{
 
 };
 
-AppContainer.contextTypes = {
-  store: React.PropTypes.object
-};
+// AppContainer.contextTypes = {
+//   store: React.PropTypes.object
+// };
 export default AppContainer;
