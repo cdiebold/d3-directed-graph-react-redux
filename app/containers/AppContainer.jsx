@@ -3,7 +3,7 @@ import React from 'react';
 
 import GraphMenu from '../components/GraphMenu';
 import ControlPanel from '../components/ControlPanel';
-
+import TopicList from '../components/TopicList';
 class AppContainer extends React.Component{
 
   // componentDidMount(){
@@ -26,7 +26,7 @@ class AppContainer extends React.Component{
           <ControlPanel/>
         </div>
         <div className='small-4 columns'>
-          <h4> topics</h4>
+          <TopicList/>
         </div>
 
       </div>
