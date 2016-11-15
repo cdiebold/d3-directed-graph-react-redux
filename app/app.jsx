@@ -10,7 +10,10 @@ import AppContainer from './containers/AppContainer';
 // import { resizeScreen } from './actions';
 
 //let store = createStore(particlesApp);
-
+//Load foundation
+require('style!css!foundation-sites/dist/foundation.min.css')
+//application css
+require('style!css!sass!applicationStyles')
 ReactDOM.render(
     // <Provider store={store}>
     //     <AppContainer />
@@ -18,10 +21,3 @@ ReactDOM.render(
     <AppContainer/>,
     document.getElementById('app')
 );
-
-let onResize = function () {
-  //  store.dispatch(resizeScreen(window.innerWidth, window.innerHeight));
-}
-onResize();
-
-d3Select(window).on('resize', onResize);

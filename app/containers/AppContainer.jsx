@@ -1,7 +1,8 @@
 import {connect} from 'react-redux';
 import React from 'react';
 
-import Main from '../components/Main';
+import GraphMenu from '../components/GraphMenu';
+import ControlPanel from '../components/ControlPanel';
 
 class AppContainer extends React.Component{
 
@@ -19,8 +20,15 @@ class AppContainer extends React.Component{
     //const {store} = this.context;
   //  const state = store.getState();
     return (
-      <div>
-        <h2> hello </h2>
+      <div className='row'>
+        <div className='small-8 columns'>
+          <GraphMenu/>
+          <ControlPanel/>
+        </div>
+        <div className='small-4 columns'>
+          <h4> topics</h4>
+        </div>
+
       </div>
     );
 
