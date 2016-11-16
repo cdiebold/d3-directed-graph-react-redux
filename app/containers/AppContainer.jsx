@@ -4,6 +4,8 @@ import React from 'react';
 import GraphMenu from '../components/GraphMenu';
 import ControlPanel from '../components/ControlPanel';
 import TopicList from '../components/TopicList';
+import DirectedGraph from '../components/DirectedGraph';
+
 class AppContainer extends React.Component{
 
   // componentDidMount(){
@@ -24,6 +26,7 @@ class AppContainer extends React.Component{
         <div className='small-8 columns'>
           <GraphMenu/>
           <ControlPanel/>
+          <DirectedGraph width={600} height={330}/>
         </div>
         <div className='small-4 columns'>
           <TopicList/>
